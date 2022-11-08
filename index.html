@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocity Forms</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="popup" class="popup-opaque" onclick="return unpopup();"></div>
+
+    <div class="header-area">
+      <div class="header-title">Host Profiles</div>
+      <a
+        class="hamburger-menu-anchor"
+        href="#"
+        onclick="return popup(this, '.hamburger-menu');"
+      ></a>
+    </div>
+
+    <div class="popup-menu hamburger-menu">
+      <a class="popup-menu-item" href="velocity:menu:create">
+        <!-- image goes here -->
+        Create Host Profile
+      </a>
+      <a class="popup-menu-item" href="velocity:menu:scantoconfig">
+        <!-- image goes here -->
+        Scan to Config
+      </a>
+      <a class="popup-menu-item" href="velocity:menu:taptoshare">
+        <!-- image goes here -->
+        Tap to Share
+      </a>
+    </div>
+
+    <div class="host-list-area">
+      <div id="host-0" class="host-container" data-host-name="Foxtrot" data-host-type="IBM-5251-11">
+        <a class="host-anchor" href="velocity:host:0">
+          <div class="host-name">Foxtrot</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">IBM-5251-11</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-0');"></a>
+        <div id="more-menu-0" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:0:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:0:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:0:delete"> Delete </a>
+        </div>
+      </div>
+
+      <div id="host-1" class="host-container" data-host-name="Web Profile" data-host-type="Web">
+        <a class="host-anchor" href="velocity:host:1">
+          <div class="host-name">Web &amp; Profile</div>
+          <div class="host-address">
+            https://www.wavelink.com/Download-Velocity_enterprise-app-modernization-Software/?a=1&amp;b=2
+          </div>
+          <div class="host-type">Web</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-1');"></a>
+        <div id="more-menu-1" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:0:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:0:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:0:delete"> Delete </a>
+        </div>
+      </div>
+      <div id="host-2" class="host-container" data-host-name="Foxtrot 3" data-host-type="VT220">
+        <a class="host-anchor" href="velocity:host:2">
+          <div class="host-name">Foxtrot 3</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">VT220</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-2');"></a>
+        <div id="more-menu-2" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:0:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:0:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:0:delete"> Delete </a>
+        </div>
+      </div>
+      <div id="host-3" class="host-container" data-host-name="Foxtrot 3" data-host-type="VT220">
+        <a class="host-anchor" href="velocity:host:3">
+          <div class="host-name">Foxtrot 3</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">VT220</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-3');"></a>
+        <div id="more-menu-3" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:0:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:0:edit"> Edit </a>
+        </div>
+      </div>
+      <div id="host-4" class="host-container" data-host-name="Foxtrot 3" data-host-type="VT220">
+        <a class="host-anchor" href="velocity:host:4">
+          <div class="host-name">Foxtrot 3</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">VT220</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-4');"></a>
+        <div id="more-menu-4" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:0:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:0:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:0:delete"> Delete </a>
+        </div>
+      </div>
+      <div id="host-5" class="host-container" data-host-name="Foxtrot 3" data-host-type="VT220">
+        <a class="host-anchor" href="velocity:host:5">
+          <div class="host-name">Foxtrot 3</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">VT220</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-5');"></a>
+        <div id="more-menu-5" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:5:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:5:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:5:delete"> Delete </a>
+        </div>
+      </div>
+      <div id="host-6" class="host-container" data-host-name="Foxtrot 3" data-host-type="VT220">
+        <a class="host-anchor" href="velocity:host:6">
+          <div class="host-name">Foxtrot 3</div>
+          <div class="host-address">foxtrot.wavelink.com:23</div>
+          <div class="host-type">VT220</div>
+        </a>
+        <a class="host-more" href="#" onclick="return popup(this, '#more-menu-6');"></a>
+        <div id="more-menu-6" class="popup-menu">
+          <a class="popup-menu-item" href="velocity:more:6:ping"> Ping </a>
+          <a class="popup-menu-item" href="velocity:more:6:edit"> Edit </a>
+          <a class="popup-menu-item" href="velocity:more:6:delete"> Delete </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-area">
+      <div class="footer-version">Version 1.2.3.4</div>
+    </div>
+  </body>
+</html>
